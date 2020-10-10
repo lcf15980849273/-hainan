@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ChargeMoneyPopViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="d7p-LK-GKv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="83"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="83" id="Jql-9i-GBv"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="WUj-xF-19I">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="温馨提示：为了避免余额不足被动停止充电，请选择大于您平时充电的金额，充电完成后剩下余额将原路退还到您的账号。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o2T-Hj-6M1">
+                        <rect key="frame" x="0.0" y="83" width="320" height="47"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="1" green="0.66666666669999997" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="d7p-LK-GKv" secondAttribute="trailing" id="0CP-CJ-mqb"/>
+                    <constraint firstItem="o2T-Hj-6M1" firstAttribute="top" secondItem="d7p-LK-GKv" secondAttribute="bottom" id="AgT-ci-AF7"/>
+                    <constraint firstAttribute="trailing" secondItem="o2T-Hj-6M1" secondAttribute="trailing" id="jEL-dj-up9"/>
+                    <constraint firstItem="d7p-LK-GKv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="vVb-RC-HeI"/>
+                    <constraint firstItem="d7p-LK-GKv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="wEp-TH-ryE"/>
+                    <constraint firstItem="o2T-Hj-6M1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="yPR-RY-15g"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="d7p-LK-GKv" id="mRX-1o-dfS"/>
+                <outlet property="tipsLabel" destination="o2T-Hj-6M1" id="qjo-AI-Ufw"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="148.42578710644679"/>
+        </tableViewCell>
+    </objects>
+</document>

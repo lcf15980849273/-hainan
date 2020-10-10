@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RepayListHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="repay-bg" translatesAutoresizingMaskIntoConstraints="NO" id="UOQ-Fg-wge">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hYP-OI-K5I">
+                    <rect key="frame" x="187.5" y="20" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8916.68" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jwc-s4-I7P">
+                    <rect key="frame" x="99.5" y="30" width="176.5" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="BT5-a1-gL4"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="45"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Kl-nF-jzw">
+                    <rect key="frame" x="30" y="90" width="315" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.49019607843137253" green="0.48627450980392156" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UOQ-Fg-wge" secondAttribute="trailing" id="4vb-vL-VWP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UOQ-Fg-wge" secondAttribute="bottom" id="Irq-0x-zy1"/>
+                <constraint firstItem="3Kl-nF-jzw" firstAttribute="top" secondItem="Jwc-s4-I7P" secondAttribute="bottom" constant="10" id="KdB-Gu-0A8"/>
+                <constraint firstItem="3Kl-nF-jzw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="30" id="L84-bh-QZ3"/>
+                <constraint firstItem="UOQ-Fg-wge" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Sru-oc-xDT"/>
+                <constraint firstItem="UOQ-Fg-wge" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Vic-rB-p2U"/>
+                <constraint firstItem="Jwc-s4-I7P" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Vyf-t6-qoj"/>
+                <constraint firstItem="hYP-OI-K5I" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="YIE-fe-zUu"/>
+                <constraint firstItem="Jwc-s4-I7P" firstAttribute="top" secondItem="hYP-OI-K5I" secondAttribute="bottom" constant="10" id="bzu-gL-aYg"/>
+                <constraint firstItem="hYP-OI-K5I" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hJU-bl-2SA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3Kl-nF-jzw" secondAttribute="trailing" constant="30" id="zOM-LB-D7M"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="mountLabel" destination="Jwc-s4-I7P" id="Ng2-fF-su9"/>
+                <outlet property="timeLabel" destination="hYP-OI-K5I" id="fHJ-B7-e3f"/>
+            </connections>
+            <point key="canvasLocation" x="-161" y="46"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="repay-bg" width="375" height="200"/>
+    </resources>
+</document>

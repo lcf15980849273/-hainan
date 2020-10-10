@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BDMyShopViewController">
+            <connections>
+                <outlet property="collectionViewLayout" destination="iC1-j6-yOd" id="jzf-ns-wrj"/>
+                <outlet property="headercollectionView" destination="DQt-wr-aWj" id="9bv-dl-3C3"/>
+                <outlet property="tableView" destination="PSQ-Wb-M0q" id="ihe-7a-Jpp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PSQ-Wb-M0q">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="a3U-Tc-Cfm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="204"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKT-Rs-5Yn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="DQt-wr-aWj">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="194"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iC1-j6-yOd">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="DQt-wr-aWj" firstAttribute="top" secondItem="DKT-Rs-5Yn" secondAttribute="top" id="5ac-Yu-wMq"/>
+                                    <constraint firstItem="DQt-wr-aWj" firstAttribute="leading" secondItem="DKT-Rs-5Yn" secondAttribute="leading" id="6do-oo-JrF"/>
+                                    <constraint firstAttribute="bottom" secondItem="DQt-wr-aWj" secondAttribute="bottom" id="RyP-aN-yQM"/>
+                                    <constraint firstAttribute="trailing" secondItem="DQt-wr-aWj" secondAttribute="trailing" id="uHa-wQ-F37"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="DKT-Rs-5Yn" secondAttribute="bottom" constant="10" id="7pO-uu-KGN"/>
+                            <constraint firstItem="DKT-Rs-5Yn" firstAttribute="leading" secondItem="a3U-Tc-Cfm" secondAttribute="leading" id="Z0g-Dw-i3s"/>
+                            <constraint firstAttribute="trailing" secondItem="DKT-Rs-5Yn" secondAttribute="trailing" id="bno-Ir-akc"/>
+                            <constraint firstItem="DKT-Rs-5Yn" firstAttribute="top" secondItem="a3U-Tc-Cfm" secondAttribute="top" id="sjK-cW-FNZ"/>
+                        </constraints>
+                    </view>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PSQ-Wb-M0q" secondAttribute="bottom" id="dHQ-UL-VBA"/>
+                <constraint firstItem="PSQ-Wb-M0q" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="taK-Ex-3CB"/>
+                <constraint firstAttribute="trailing" secondItem="PSQ-Wb-M0q" secondAttribute="trailing" id="vFr-VL-Nea"/>
+                <constraint firstItem="PSQ-Wb-M0q" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yeQ-Ic-UfO"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

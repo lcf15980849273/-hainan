@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MoneyCell">
+            <rect key="frame" x="0.0" y="0.0" width="85" height="34"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="85" height="34"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3l9-P8-Of3">
+                        <rect key="frame" x="0.0" y="0.0" width="85" height="34"/>
+                        <color key="backgroundColor" red="0.1843137255" green="0.81568627449999997" blue="0.46274509800000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="Button">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="3l9-P8-Of3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="USQ-Fz-kLh"/>
+                <constraint firstItem="3l9-P8-Of3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="hfY-bl-0GI"/>
+                <constraint firstAttribute="trailing" secondItem="3l9-P8-Of3" secondAttribute="trailing" id="mVb-5E-csI"/>
+                <constraint firstAttribute="bottom" secondItem="3l9-P8-Of3" secondAttribute="bottom" id="v33-RR-4AZ"/>
+            </constraints>
+            <connections>
+                <outlet property="moneyButton" destination="3l9-P8-Of3" id="fC4-by-qrk"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="155"/>
+        </collectionViewCell>
+    </objects>
+</document>

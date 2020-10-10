@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BEnergyChargeOrderDetailsHeadView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="152"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="orderDetail" translatesAutoresizingMaskIntoConstraints="NO" id="5So-lp-tG5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="152"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fUU-eS-baa">
+                    <rect key="frame" x="20" y="117" width="335" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="9LI-15-N4W"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充电已完成" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zvo-5S-uDt">
+                    <rect key="frame" x="20" y="75" width="335" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="TFl-4e-aUv"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="5So-lp-tG5" secondAttribute="trailing" id="324-0D-1Cx"/>
+                <constraint firstAttribute="bottom" secondItem="5So-lp-tG5" secondAttribute="bottom" id="7Ik-2F-nz7"/>
+                <constraint firstItem="Zvo-5S-uDt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="Fvk-7h-Vdk"/>
+                <constraint firstAttribute="trailing" secondItem="fUU-eS-baa" secondAttribute="trailing" constant="20" id="HPk-bN-eIZ"/>
+                <constraint firstItem="fUU-eS-baa" firstAttribute="top" secondItem="Zvo-5S-uDt" secondAttribute="bottom" constant="12" id="O8q-5V-WfB"/>
+                <constraint firstItem="fUU-eS-baa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="TrK-Nk-p2X"/>
+                <constraint firstAttribute="bottom" secondItem="fUU-eS-baa" secondAttribute="bottom" constant="15" id="V06-Cb-Qdi"/>
+                <constraint firstItem="5So-lp-tG5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="my1-5L-SLQ"/>
+                <constraint firstItem="5So-lp-tG5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xci-OW-GK6"/>
+                <constraint firstAttribute="trailing" secondItem="Zvo-5S-uDt" secondAttribute="trailing" constant="20" id="zeJ-Z2-YOc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="reasonLabel" destination="fUU-eS-baa" id="ix4-zO-Gdf"/>
+                <outlet property="titleLabel" destination="Zvo-5S-uDt" id="SmE-ah-aV4"/>
+            </connections>
+            <point key="canvasLocation" x="138.40000000000001" y="7.1964017991004505"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="orderDetail" width="375.5" height="176"/>
+    </resources>
+</document>

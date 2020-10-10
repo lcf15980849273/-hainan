@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BEnergyActivityRechargeViewController">
+            <connections>
+                <outlet property="myTableView" destination="tSq-ps-ShK" id="Jxs-j6-nru"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weChatView" destination="mRP-dU-Xdh" id="tcb-ak-JxL"/>
+                <outlet property="weSelectImageView" destination="IJD-Yx-apy" id="L2U-My-O88"/>
+                <outlet property="yunSelectImageView" destination="Hly-p9-CLb" id="xXO-AK-A2z"/>
+                <outlet property="yunshanfuView" destination="QR5-Pl-fd1" id="NaH-um-u7i"/>
+                <outlet property="zhiSelectImageView" destination="xjA-Qr-ULl" id="wKk-8o-qgX"/>
+                <outlet property="zhifubaoView" destination="ETr-Rx-B5K" id="H5d-Sh-bMZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tSq-ps-ShK">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="626"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCE-cT-I0r">
+                    <rect key="frame" x="20" y="816" width="374" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="PwI-qa-LMg"/>
+                    </constraints>
+                    <state key="normal" title="确认充值" backgroundImage="chargingBtn"/>
+                    <connections>
+                        <action selector="submitChargeButtonClick:" destination="-1" eventType="touchUpInside" id="Vg9-q6-08t"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zdn-My-Lgr">
+                    <rect key="frame" x="20" y="636" width="374" height="150"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mRP-dU-Xdh">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_wechat_Balance" translatesAutoresizingMaskIntoConstraints="NO" id="sbK-Cv-LHG">
+                                    <rect key="frame" x="0.0" y="12" width="26" height="26"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信支付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5X-qL-pvZ">
+                                    <rect key="frame" x="36" y="15.5" width="65.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IJD-Yx-apy">
+                                    <rect key="frame" x="360" y="18" width="14" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="77p-u4-J0l"/>
+                                        <constraint firstAttribute="width" constant="14" id="h5J-0g-YLS"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Tc-lv-DOW">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <connections>
+                                        <action selector="wePayButtonClick:" destination="-1" eventType="touchUpInside" id="eef-kG-g3w"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="M5X-qL-pvZ" firstAttribute="leading" secondItem="sbK-Cv-LHG" secondAttribute="trailing" constant="10" id="1vX-BL-N4e"/>
+                                <constraint firstItem="sbK-Cv-LHG" firstAttribute="leading" secondItem="mRP-dU-Xdh" secondAttribute="leading" id="E5K-cA-JIn"/>
+                                <constraint firstItem="IJD-Yx-apy" firstAttribute="centerY" secondItem="mRP-dU-Xdh" secondAttribute="centerY" id="GnU-rf-YVb"/>
+                                <constraint firstAttribute="trailing" secondItem="6Tc-lv-DOW" secondAttribute="trailing" id="HkE-jK-01t"/>
+                                <constraint firstItem="sbK-Cv-LHG" firstAttribute="centerY" secondItem="mRP-dU-Xdh" secondAttribute="centerY" id="Jbh-EI-gQx"/>
+                                <constraint firstAttribute="height" constant="50" id="LA7-32-0Mn"/>
+                                <constraint firstItem="M5X-qL-pvZ" firstAttribute="centerY" secondItem="mRP-dU-Xdh" secondAttribute="centerY" id="gWm-AV-yeh"/>
+                                <constraint firstItem="6Tc-lv-DOW" firstAttribute="top" secondItem="mRP-dU-Xdh" secondAttribute="top" id="hJV-8v-F3L"/>
+                                <constraint firstAttribute="trailing" secondItem="IJD-Yx-apy" secondAttribute="trailing" id="haB-nn-R3V"/>
+                                <constraint firstItem="6Tc-lv-DOW" firstAttribute="leading" secondItem="mRP-dU-Xdh" secondAttribute="leading" id="q61-I7-MtZ"/>
+                                <constraint firstAttribute="bottom" secondItem="6Tc-lv-DOW" secondAttribute="bottom" id="w6d-QF-3bh"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ETr-Rx-B5K">
+                            <rect key="frame" x="0.0" y="50" width="374" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_alipay_Balance" translatesAutoresizingMaskIntoConstraints="NO" id="4Pu-ow-4p5">
+                                    <rect key="frame" x="0.0" y="13" width="24" height="24"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="支付宝支付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dkq-AB-YrU">
+                                    <rect key="frame" x="34" y="15.5" width="82" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xjA-Qr-ULl">
+                                    <rect key="frame" x="360" y="18" width="14" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="aSC-rq-lC6"/>
+                                        <constraint firstAttribute="width" constant="14" id="kxK-AM-5EP"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTX-aG-Cnv">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <connections>
+                                        <action selector="aiPayButtonClick:" destination="-1" eventType="touchUpInside" id="xSu-F3-u7e"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Dkq-AB-YrU" firstAttribute="centerY" secondItem="ETr-Rx-B5K" secondAttribute="centerY" id="D0u-YI-SPY"/>
+                                <constraint firstAttribute="bottom" secondItem="yTX-aG-Cnv" secondAttribute="bottom" id="D3Y-xa-kro"/>
+                                <constraint firstItem="4Pu-ow-4p5" firstAttribute="centerY" secondItem="ETr-Rx-B5K" secondAttribute="centerY" id="Kis-ny-a6s"/>
+                                <constraint firstAttribute="trailing" secondItem="yTX-aG-Cnv" secondAttribute="trailing" id="Ps3-MA-J3x"/>
+                                <constraint firstItem="yTX-aG-Cnv" firstAttribute="leading" secondItem="ETr-Rx-B5K" secondAttribute="leading" id="R7B-If-Bzl"/>
+                                <constraint firstAttribute="height" constant="50" id="Ts9-Ac-RtN"/>
+                                <constraint firstItem="yTX-aG-Cnv" firstAttribute="top" secondItem="ETr-Rx-B5K" secondAttribute="top" id="cPs-X5-ONx"/>
+                                <constraint firstItem="4Pu-ow-4p5" firstAttribute="leading" secondItem="ETr-Rx-B5K" secondAttribute="leading" id="tr6-tH-A9U"/>
+                                <constraint firstItem="xjA-Qr-ULl" firstAttribute="centerY" secondItem="ETr-Rx-B5K" secondAttribute="centerY" id="wBY-EF-8Ir"/>
+                                <constraint firstAttribute="trailing" secondItem="xjA-Qr-ULl" secondAttribute="trailing" id="xrp-gR-LX2"/>
+                                <constraint firstItem="Dkq-AB-YrU" firstAttribute="leading" secondItem="4Pu-ow-4p5" secondAttribute="trailing" constant="10" id="zPe-uE-dUc"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QR5-Pl-fd1">
+                            <rect key="frame" x="0.0" y="100" width="374" height="50"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yunIcon" translatesAutoresizingMaskIntoConstraints="NO" id="FRm-Qp-GZe">
+                                    <rect key="frame" x="0.0" y="13" width="24" height="24"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="云闪付" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RI-ul-dCf">
+                                    <rect key="frame" x="34" y="15.5" width="49" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hly-p9-CLb">
+                                    <rect key="frame" x="360" y="18" width="14" height="14"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="14" id="Fu9-86-3wL"/>
+                                        <constraint firstAttribute="height" constant="14" id="rPD-of-KgF"/>
+                                    </constraints>
+                                </imageView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mb2-Ln-EV0">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                    <connections>
+                                        <action selector="aiPayButtonClick:" destination="-1" eventType="touchUpInside" id="YMI-hJ-w65"/>
+                                        <action selector="yunshanfuButtonClick:" destination="-1" eventType="touchUpInside" id="lTy-5A-bRS"/>
+                                    </connections>
+                                </button>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unionPay" translatesAutoresizingMaskIntoConstraints="NO" id="Uk9-o2-zZZ">
+                                    <rect key="frame" x="326" y="16" width="24" height="18.5"/>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Mb2-Ln-EV0" firstAttribute="leading" secondItem="QR5-Pl-fd1" secondAttribute="leading" id="1LW-Lm-Lnz"/>
+                                <constraint firstItem="Mb2-Ln-EV0" firstAttribute="top" secondItem="QR5-Pl-fd1" secondAttribute="top" id="5V4-ku-7Gx"/>
+                                <constraint firstItem="FRm-Qp-GZe" firstAttribute="centerY" secondItem="5RI-ul-dCf" secondAttribute="centerY" id="CLy-k4-UMa"/>
+                                <constraint firstItem="Uk9-o2-zZZ" firstAttribute="centerY" secondItem="QR5-Pl-fd1" secondAttribute="centerY" id="NfQ-fy-9sj"/>
+                                <constraint firstItem="5RI-ul-dCf" firstAttribute="centerY" secondItem="QR5-Pl-fd1" secondAttribute="centerY" id="Qsz-bL-SFT"/>
+                                <constraint firstItem="FRm-Qp-GZe" firstAttribute="centerY" secondItem="QR5-Pl-fd1" secondAttribute="centerY" id="Sd6-xx-NNx"/>
+                                <constraint firstAttribute="height" constant="50" id="TVG-aq-Hr6"/>
+                                <constraint firstItem="FRm-Qp-GZe" firstAttribute="leading" secondItem="QR5-Pl-fd1" secondAttribute="leading" id="Utv-yn-jEs"/>
+                                <constraint firstItem="FRm-Qp-GZe" firstAttribute="centerY" secondItem="QR5-Pl-fd1" secondAttribute="centerY" id="aab-tW-BFQ"/>
+                                <constraint firstItem="Hly-p9-CLb" firstAttribute="leading" secondItem="Uk9-o2-zZZ" secondAttribute="trailing" constant="10" id="b6j-z0-isR"/>
+                                <constraint firstItem="Hly-p9-CLb" firstAttribute="centerY" secondItem="QR5-Pl-fd1" secondAttribute="centerY" id="cWa-re-XPb"/>
+                                <constraint firstAttribute="trailing" secondItem="Mb2-Ln-EV0" secondAttribute="trailing" id="dUP-ia-6kR"/>
+                                <constraint firstAttribute="bottom" secondItem="Mb2-Ln-EV0" secondAttribute="bottom" id="hdf-P5-wNq"/>
+                                <constraint firstItem="5RI-ul-dCf" firstAttribute="leading" secondItem="FRm-Qp-GZe" secondAttribute="trailing" constant="10" id="ipJ-bl-DbU"/>
+                                <constraint firstAttribute="trailing" secondItem="Hly-p9-CLb" secondAttribute="trailing" id="k3L-Wl-FGs"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="Zdn-My-Lgr" firstAttribute="top" secondItem="tSq-ps-ShK" secondAttribute="bottom" constant="10" id="1co-fM-aLj"/>
+                <constraint firstItem="Zdn-My-Lgr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="85y-GP-7Af"/>
+                <constraint firstAttribute="trailing" secondItem="Zdn-My-Lgr" secondAttribute="trailing" constant="20" id="OIW-cp-vRB"/>
+                <constraint firstItem="tSq-ps-ShK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="PuI-Tm-eZX"/>
+                <constraint firstItem="nCE-cT-I0r" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="SYv-mi-fq7"/>
+                <constraint firstAttribute="trailing" secondItem="tSq-ps-ShK" secondAttribute="trailing" id="UfU-cM-Ia9"/>
+                <constraint firstItem="tSq-ps-ShK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Vcu-Bu-gh9"/>
+                <constraint firstAttribute="trailing" secondItem="nCE-cT-I0r" secondAttribute="trailing" constant="20" id="gRt-xx-FKZ"/>
+                <constraint firstItem="nCE-cT-I0r" firstAttribute="top" secondItem="Zdn-My-Lgr" secondAttribute="bottom" constant="30" id="nli-IS-StM"/>
+                <constraint firstAttribute="bottom" secondItem="nCE-cT-I0r" secondAttribute="bottom" constant="30" id="tAR-fe-rwZ"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chargingBtn" width="301" height="45"/>
+        <image name="icon_alipay_Balance" width="24" height="24"/>
+        <image name="icon_wechat_Balance" width="26" height="26"/>
+        <image name="unionPay" width="24" height="18.5"/>
+        <image name="yunIcon" width="24" height="24"/>
+    </resources>
+</document>

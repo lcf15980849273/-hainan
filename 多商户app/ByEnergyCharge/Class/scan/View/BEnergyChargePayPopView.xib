@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BEnergyChargePayPopView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqR-w5-2V9">
+                    <rect key="frame" x="31" y="126.5" width="313" height="414"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我要充值" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UWE-qo-wF7">
+                            <rect key="frame" x="120" y="17" width="73.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <color key="textColor" red="0.14509803921568626" green="0.14509803921568626" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aTH-Il-L97">
+                            <rect key="frame" x="20" y="48" width="273" height="293"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vby-vK-vUN">
+                            <rect key="frame" x="20" y="351" width="273" height="45"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="wGM-wg-sSV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="确认充值" backgroundImage="chargingBtn"/>
+                            <connections>
+                                <action selector="sureButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="cCB-Js-BXn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="vby-vK-vUN" secondAttribute="bottom" constant="18" id="A3K-iz-Lc8"/>
+                        <constraint firstAttribute="height" constant="414" id="Blh-D8-aoq"/>
+                        <constraint firstItem="vby-vK-vUN" firstAttribute="leading" secondItem="EqR-w5-2V9" secondAttribute="leading" constant="20" id="Ftg-ob-WkO"/>
+                        <constraint firstItem="UWE-qo-wF7" firstAttribute="top" secondItem="EqR-w5-2V9" secondAttribute="top" constant="17" id="NMW-AO-SC9"/>
+                        <constraint firstAttribute="trailing" secondItem="vby-vK-vUN" secondAttribute="trailing" constant="20" id="RlS-w2-rCd"/>
+                        <constraint firstItem="aTH-Il-L97" firstAttribute="top" secondItem="UWE-qo-wF7" secondAttribute="bottom" constant="10" id="VTx-b6-PYz"/>
+                        <constraint firstItem="UWE-qo-wF7" firstAttribute="centerX" secondItem="EqR-w5-2V9" secondAttribute="centerX" id="WKy-6a-MVp"/>
+                        <constraint firstItem="aTH-Il-L97" firstAttribute="leading" secondItem="EqR-w5-2V9" secondAttribute="leading" constant="20" id="iWR-eN-xNa"/>
+                        <constraint firstItem="vby-vK-vUN" firstAttribute="top" secondItem="aTH-Il-L97" secondAttribute="bottom" constant="10" id="rq7-4T-6ff"/>
+                        <constraint firstAttribute="trailing" secondItem="aTH-Il-L97" secondAttribute="trailing" constant="20" id="xp5-j6-YIx"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sp4-C7-gBN">
+                    <rect key="frame" x="175" y="560.5" width="25" height="25"/>
+                    <state key="normal" backgroundImage="feedBackClose"/>
+                    <connections>
+                        <action selector="closeButtonClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="rKX-Z0-odF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.40073844178082191" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Sp4-C7-gBN" firstAttribute="top" secondItem="EqR-w5-2V9" secondAttribute="bottom" constant="20" id="FgZ-xw-ddK"/>
+                <constraint firstItem="EqR-w5-2V9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="31" id="Kl1-Sd-EYf"/>
+                <constraint firstItem="Sp4-C7-gBN" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PLA-5r-ysX"/>
+                <constraint firstItem="EqR-w5-2V9" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Pyi-HD-EA2"/>
+                <constraint firstAttribute="trailing" secondItem="EqR-w5-2V9" secondAttribute="trailing" constant="31" id="WEh-WT-gQT"/>
+            </constraints>
+            <connections>
+                <outlet property="tableView" destination="aTH-Il-L97" id="ZIN-F6-5ye"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chargingBtn" width="308.5" height="51"/>
+        <image name="feedBackClose" width="25" height="25"/>
+    </resources>
+</document>

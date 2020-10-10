@@ -1,0 +1,13 @@
+{
+    "applinks":{
+        "apps":[
+
+        ],
+        "details":[{
+            "appID":"QZLVVVG4X9.com.hnhaikong.charging",
+            "paths":[
+                "*"
+            ]
+        }]
+    }
+}

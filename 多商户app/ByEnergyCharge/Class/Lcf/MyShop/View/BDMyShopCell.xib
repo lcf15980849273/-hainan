@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BDMyShopCell">
+            <rect key="frame" x="0.0" y="0.0" width="94" height="97"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="94" height="97"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AIP-B9-buo">
+                        <rect key="frame" x="0.0" y="0.0" width="94" height="97"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hnA-4r-daF">
+                                <rect key="frame" x="25.5" y="17.5" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="ABN-q1-73C"/>
+                                    <constraint firstAttribute="width" constant="44" id="PMs-iV-h5g"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小店信息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjF-LL-DlI">
+                                <rect key="frame" x="23" y="71.5" width="49.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.16862745098039217" green="0.1764705882352941" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="hnA-4r-daF" firstAttribute="centerX" secondItem="AIP-B9-buo" secondAttribute="centerX" id="0uo-Gp-TRJ"/>
+                            <constraint firstItem="sjF-LL-DlI" firstAttribute="centerX" secondItem="hnA-4r-daF" secondAttribute="centerX" id="Nvf-uy-u0F"/>
+                            <constraint firstItem="sjF-LL-DlI" firstAttribute="top" secondItem="hnA-4r-daF" secondAttribute="bottom" constant="10" id="lCp-zT-B1A"/>
+                            <constraint firstItem="hnA-4r-daF" firstAttribute="top" secondItem="AIP-B9-buo" secondAttribute="top" constant="17.5" id="vkV-aL-GCo"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AIP-B9-buo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Brs-V2-n9Z"/>
+                <constraint firstAttribute="bottom" secondItem="AIP-B9-buo" secondAttribute="bottom" id="FaX-tk-18U"/>
+                <constraint firstAttribute="trailing" secondItem="AIP-B9-buo" secondAttribute="trailing" id="Kvi-U1-L8d"/>
+                <constraint firstItem="AIP-B9-buo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Pgt-C7-I2P"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <connections>
+                <outlet property="iconImageView" destination="hnA-4r-daF" id="uFd-ZE-h9h"/>
+                <outlet property="titleLabel" destination="sjF-LL-DlI" id="g9W-Xg-k1h"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BEnergyLocationAnnotationView">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="26"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stubWhiteIcon" translatesAutoresizingMaskIntoConstraints="NO" id="GKf-ph-IN2">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="26"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S36-m9-td5">
+                    <rect key="frame" x="3" y="4" width="64" height="11"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <color key="textColor" red="0.0" green="0.74901960784313726" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="GKf-ph-IN2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5PS-6y-8n5"/>
+                <constraint firstAttribute="trailing" secondItem="S36-m9-td5" secondAttribute="trailing" constant="3" id="AOg-FQ-aYk"/>
+                <constraint firstItem="S36-m9-td5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="NjV-zU-XkG"/>
+                <constraint firstAttribute="trailing" secondItem="GKf-ph-IN2" secondAttribute="trailing" id="YZx-NV-KTa"/>
+                <constraint firstAttribute="bottom" secondItem="GKf-ph-IN2" secondAttribute="bottom" id="jkR-Uk-pia"/>
+                <constraint firstItem="GKf-ph-IN2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ny1-dH-jNE"/>
+                <constraint firstItem="S36-m9-td5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="3" id="wYI-dx-2qK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="GKf-ph-IN2" id="UYp-Ko-R3I"/>
+                <outlet property="titleLabel" destination="S36-m9-td5" id="4kA-IW-Gny"/>
+                <outlet property="topHeight" destination="NjV-zU-XkG" id="3Zl-8O-fAg"/>
+            </connections>
+            <point key="canvasLocation" x="108.8" y="516.34182908545733"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="stubWhiteIcon" width="70" height="25.5"/>
+    </resources>
+</document>

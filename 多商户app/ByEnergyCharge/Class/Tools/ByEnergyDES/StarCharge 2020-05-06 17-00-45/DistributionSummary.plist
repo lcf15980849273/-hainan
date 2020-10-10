@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>StarCharge.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>armv7</string>
+				<string>arm64</string>
+			</array>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>B4AEC31C209BA5258EDBD7D9CFD3798E871E1698</string>
+				<key>dateExpires</key>
+				<string>2021/1/14</string>
+				<key>type</key>
+				<string>Apple Distribution</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>YE3AD4YMQ5.com.xmnewyea.charge</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>YE3AD4YMQ5</string>
+				<key>get-task-allow</key>
+				<false/>
+				<key>keychain-access-groups</key>
+				<array>
+					<string>YE3AD4YMQ5.com.xmnewyea.charge</string>
+				</array>
+			</dict>
+			<key>name</key>
+			<string>StarCharge.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>d50fd3c8-921d-4456-b3b1-979c12ab2c33</string>
+				<key>name</key>
+				<string>iOS Team Ad Hoc Provisioning Profile: com.xmnewyea.charge</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>YE3AD4YMQ5</string>
+				<key>name</key>
+				<string>Xiamen Newyea Science And Technology Co.,LTD.</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BEnergyInputCodeView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ap8-eV-I9V">
+                    <rect key="frame" x="0.0" y="385" width="414" height="126"/>
+                    <subviews>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入桩编号" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KOW-Wp-jrm">
+                            <rect key="frame" x="40" y="0.0" width="334" height="42"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="diM-08-zaS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textField>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8o-5X-h41">
+                            <rect key="frame" x="40" y="84" width="334" height="42"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="42" id="iG4-zY-by1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <state key="normal" title="确定" backgroundImage="chargingBtn"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="commitButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="mcC-X5-IXC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="o8o-5X-h41" secondAttribute="bottom" id="0UW-Qk-Kk9"/>
+                        <constraint firstItem="o8o-5X-h41" firstAttribute="leading" secondItem="ap8-eV-I9V" secondAttribute="leading" constant="40" id="EjR-IP-Sbx"/>
+                        <constraint firstAttribute="trailing" secondItem="o8o-5X-h41" secondAttribute="trailing" constant="40" id="U7y-F8-ufc"/>
+                        <constraint firstAttribute="trailing" secondItem="KOW-Wp-jrm" secondAttribute="trailing" constant="40" id="b0N-ep-x3Y"/>
+                        <constraint firstItem="KOW-Wp-jrm" firstAttribute="top" secondItem="ap8-eV-I9V" secondAttribute="top" id="hyn-sC-uZa"/>
+                        <constraint firstAttribute="height" constant="126" id="whf-Va-hGi"/>
+                        <constraint firstItem="KOW-Wp-jrm" firstAttribute="leading" secondItem="ap8-eV-I9V" secondAttribute="leading" constant="40" id="zFR-iS-Jra"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ap8-eV-I9V" secondAttribute="trailing" id="3VU-hh-g9i"/>
+                <constraint firstItem="ap8-eV-I9V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Myu-wj-5cO"/>
+                <constraint firstItem="ap8-eV-I9V" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Rsf-BQ-ceF"/>
+            </constraints>
+            <connections>
+                <outlet property="codeTextFiled" destination="KOW-Wp-jrm" id="oJc-wc-bUr"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="154"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="chargingBtn" width="301" height="45"/>
+    </resources>
+</document>

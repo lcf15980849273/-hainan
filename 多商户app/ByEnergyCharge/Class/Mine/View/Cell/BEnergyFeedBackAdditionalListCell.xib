@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="YOI-dp-6F9" customClass="BEnergyFeedBackAdditionalListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YOI-dp-6F9" id="hgs-xf-nO6">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="充电桩跳枪，无法充电。充电桩跳枪，" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nh5-6j-NaD">
+                        <rect key="frame" x="20" y="20" width="243" height="17.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="243" id="9c5-lE-Axu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.4039215686" green="0.4039215686" blue="0.4039215686" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="2020 10 -5" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gsi-yN-xeh">
+                        <rect key="frame" x="20" y="47.5" width="243" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="243" id="n1n-8W-LBC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.63921568630000003" green="0.63921568630000003" blue="0.63921568630000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dqq-SR-blS">
+                        <rect key="frame" x="0.0" y="74" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="dAu-sA-ilw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dqq-SR-blS" firstAttribute="leading" secondItem="hgs-xf-nO6" secondAttribute="leading" id="1p5-3w-Xsi"/>
+                    <constraint firstItem="nh5-6j-NaD" firstAttribute="top" secondItem="hgs-xf-nO6" secondAttribute="top" constant="20" id="HTD-nn-8d8"/>
+                    <constraint firstItem="gsi-yN-xeh" firstAttribute="leading" secondItem="hgs-xf-nO6" secondAttribute="leading" constant="20" id="RQR-Fo-ITZ"/>
+                    <constraint firstItem="gsi-yN-xeh" firstAttribute="top" secondItem="nh5-6j-NaD" secondAttribute="bottom" constant="10" id="RQq-Vf-JRJ"/>
+                    <constraint firstAttribute="bottom" secondItem="gsi-yN-xeh" secondAttribute="bottom" constant="10" id="WsE-pL-GND"/>
+                    <constraint firstItem="nh5-6j-NaD" firstAttribute="leading" secondItem="hgs-xf-nO6" secondAttribute="leading" constant="20" id="efu-3W-qds"/>
+                    <constraint firstAttribute="trailing" secondItem="Dqq-SR-blS" secondAttribute="trailing" id="fFo-6L-ASE"/>
+                    <constraint firstAttribute="bottom" secondItem="Dqq-SR-blS" secondAttribute="bottom" id="tJ8-hs-beE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="nh5-6j-NaD" id="Jcx-tA-dWc"/>
+                <outlet property="contentLabelWidth" destination="9c5-lE-Axu" id="JXf-m9-NKY"/>
+                <outlet property="timeLabel" destination="gsi-yN-xeh" id="CTi-er-ukX"/>
+                <outlet property="timeLabelWidth" destination="n1n-8W-LBC" id="Zuv-ii-WB7"/>
+            </connections>
+            <point key="canvasLocation" x="52.799999999999997" y="48.125937031484263"/>
+        </tableViewCell>
+    </objects>
+</document>
